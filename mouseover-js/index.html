@@ -1,0 +1,32 @@
+<html>
+<head>
+<script language="javascript">
+function changeimage(url) {
+document.getElementById('image').src=url; //Avec l'identité
+//Ou avec le nom : document.image.src=url;
+}
+</script>
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <td align="center">
+                Passer la souris <a href="javascript:;" onMouseOver="changeimage('rouge.jpg')" onMouseOut="changeimage('blanc.jpg')">ICI</a> pour le rouge.
+            </td>
+            <td rowspan="3">
+                <img id="image" name="image" src="blanc.jpg">
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                Passer la souris <a href="javascript:;" onMouseOver="changeimage('bleu.jpg')" onMouseOut="changeimage('blanc.jpg')">ICI</a> pour le bleu.
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                Passer la souris <a href="javascript:;" onMouseOver="changeimage('vert.jpg')" onMouseOut="changeimage('blanc.jpg')">ICI</a> pour le vert.
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

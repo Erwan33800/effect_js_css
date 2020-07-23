@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="product">
+        <div class="main-img">
+            <img src="img/1.jpeg" class="pro-img" alt="product">
+        </div>
+        <div class="thumb-img">
+            <div class="box active" onclick="changeImage(this)">
+                <img src="img/1.jpeg" alt="thumb">
+            </div>
+            <div class="box" onclick="changeImage(this)">
+                <img src="img/2.jpeg" alt="thumb">
+            </div>
+            <div class="box" onclick="changeImage(this)">
+                <img src="img/3.jpeg" alt="thumb">
+            </div>
+        </div>
+    </div>
+    <script>
+        function changeImage(event){
+            document.querySelector(".pro-img").src=event.children[0].src
+        }
+    </script>
+</body>
+</html>
